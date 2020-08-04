@@ -38,7 +38,7 @@ const userInfoLimiter = rateLimit({
 
 const loginLimiter = rateLimit({
     windowMs: 60 * 60 * 1000, // 1 hour
-    max: 3,
+    max: 20,
     message: 'Too many logins from this IP, please try again in an hour'
 });
 
